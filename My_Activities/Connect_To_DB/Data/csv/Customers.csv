@@ -1,0 +1,26 @@
+custnum,referredby,custname,address,city,state,zipcode,repid
+20042,20555,CK Music!,#1149 Blossom Road       ,Rochester           ,NY,14610       ,S01
+20151,20330,Friendly Books,19 International Dr.     ,Ryebrook            ,NY,10573       ,S03
+20181,20506,The Book Stop,512 Columbia Road        ,Somerville          ,NJ,08876,E02
+20309,20151,Mary's Card Shoppe,981 Connecticut Blvd.    ,East Hartford       ,CT,06108       ,S01
+20330,99999,TechTraining,51 Ulster St.            ,Denver              ,CO,80237       ,S03
+20417,20506,Harvey & Sons Publishing,99 West 77th St.         ,Edina               ,MN,55435       ,W01
+20437,99999,Cards for All Occasions       ,99 South Downing         ,Westchester         ,IL,60154       ,W02
+20482,20181,Kolleen's Kraft Supplies,2 Kirts Boulevard        ,Troy                ,MI,48084       ,S02
+20493,20573,Murphy's Drug Store,7110 Cordero Drive       ,San Francisco       ,CA,96910       ,N01
+20503,9989,Smithson Tech Ltd.,396 Apache River Ave.    ,Fountain Valley     ,CA,92708       ,N01
+20506,9989,Frank's Music Shop,51 Windsor Street        ,Cambridge           ,MA,02139       ,S01
+20512,20437,TLC Gardening Galore,79 Gessner               ,Houston             ,TX,77024       ,S03
+20527,99999,Pet Shoppe,40 Knox Park Road        ,Lake Zurich         ,IL,60047       ,W02
+20555,8864,Brainy Learning Center,615 Richmond Ave.        ,Houston             ,TX,77042       ,S02
+20557,99999,Prince's Pets,74 Oak St.               ,Buffalo             ,NY,14053       ,S01
+20573,21516,Smithson Travel,5619 114th Ave. N.W.     ,Bellevue            ,WA,98004       ,E03
+21133,99999,Toujours Tours,27 International Dr.     ,Ryebrook            ,NY,10573       ,S01
+21151,99999,Scholarly School,12 Harbor Blvd.          ,Santa Ana           ,CA,92704       ,S03
+21160,20573,One Stop Bookshop,22 International Dr.     ,Ryebrook            ,NY,10573       ,W02
+21516,20330,Favorite Florist,81 114th Ave.            ,Bellevue            ,WA,98004       ,S01
+8802,9989,Pretty Gardens,289 Jacoban St.          ,Quebec              ,CA,H8R 1C3     ,N02
+8864,99999,Marty's Books,49 West Nash Street      ,Wilson              ,NC,27893       ,N02
+9517,20506,The Corner Bookstore          ,36 North Miller Avenue   ,Syracuse            ,NY,13206       ,E01
+9881,21516,Advertising & Graphic Design,2008 Delta Ave.          ,Cincinnati          ,OH,45208       ,E01
+9989,20573,National Learners,39 Gallimore Dairy Road  ,Greensboro          ,NC,27409       ,N02
