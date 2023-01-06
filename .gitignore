@@ -1,9 +1,14 @@
 /.env
 /.env3.7
 /.env3.7_base
+/.env3.8.5
+/.env3.8.5_win
 /.env3.9
 /.env3.10
 .DS_Store
 *checkpoint.ipynb
 .env/pyvenv.cfg
 create_env_details.txt
+*.ipynb
+
+Slides_and_labs/*
