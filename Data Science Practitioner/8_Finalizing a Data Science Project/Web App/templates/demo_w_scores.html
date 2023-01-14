@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='{{ url_for("static", filename="main.css") }}'>
+</head>
+    
+<body>
+  <div class='logo_area'><img src='static/logo.png' alt='Greene City National Bank' class='gcnb_logo'></div>
+  <div class='controlgrid'>
+    <div class='header'>
+      <h1>GCNB Project Results</h1>
+    </div>
+    <div class='controls'>
+      <a href='/?model=clf' class='{{ img_clf }}'>Term Deposit Prediction<img src='static/clf.svg' class='icon'/></a>
+      <a href='/?model=reg' class='{{ img_reg }}'>Total Balance Prediction<img src='static/reg.svg' class='icon'/></a>
+      <a href='/?model=clust' class='{{ img_clust }}'>Customer Segmentation<img src='static/clust.svg' class='icon'/></a>
+    </div>
+    <div class='desc'>
+      <table>
+        <tr><td><b>Model type:</b></td><td>{{ model_type }}</td></tr>
+        <tr><td><b>Description:</b></td><td>{{ model_desc }}</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class='results_area'>
+
+    <div class='scores'>
+      <h2>{{ table_title }}</h2>
+      <table border=1>
+        {% for key, value in output_table.items() %}
+        <tr>
+          <th>{{ key }}</th>
+          <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    <div class='chart'>
+      <h2>{{ img_1_title }}</h2>
+        <img src='{{ img_1 }}'/>
+    </div>
+
+    <div class='chart'>
+      <h2>{{ img_2_title }}</h2>
+      <img src='{{ img_2 }}'/>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+pi@raspberrypi ~ $ help
+GNU bash, version 4.2.37(1)-release (arm-unknown-linux-gnueabihf)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                            history [-c] [-d offset] [n] or hist>
+ (( expression ))                        if COMMANDS; then COMMANDS; [ elif C>
+ . filename [arguments]                  jobs [-lnprs] [jobspec ...] or jobs >
+ :                                       kill [-s sigspec | -n signum | -sigs>
+ [ arg... ]                              let arg [arg ...]
+ [[ expression ]]                        local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]          logout [n]
+ bg [job_spec ...]                       mapfile [-n count] [-O origin] [-s c>
+ bind [-lpvsPVS] [-m keymap] [-f filen>  popd [-n] [+N | -N]
+ break [n]                               printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]       pushd [-n] [+N | -N | dir]
+ caller [expr]                           pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...)>  read [-ers] [-a array] [-d delim] [->
+ cd [-L|[-P [-e]]] [dir]                 readarray [-n count] [-O origin] [-s>
+ command [-pVv] command [arg ...]        readonly [-aAf] [name[=value] ...] o>
+ compgen [-abcdefgjksuv] [-o option]  >  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DE] >  select NAME [in WORDS ... ;] do COMM>
+ compopt [-o|+o option] [-DE] [name ..>  set [-abefhkmnptuvxBCHP] [-o option->
+ continue [n]                            shift [n]
+ coproc [NAME] command [redirections]    shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgilrtux] [-p] [name[=va>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]                  suspend [-f]
+ disown [-h] [-ar] [jobspec ...]         test [expr]
+ echo [-neE] [arg ...]                   time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [na>  times
+ eval [arg ...]                          trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argume>  true
+ exit [n]                                type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or ex>  typeset [-aAfFgilrtux] [-p] name[=va>
+ false                                   ulimit [-SHacdefilmnpqrstuvx] [limit>
+ fc [-e ename] [-lnr] [first] [last] o>  umask [-p] [-S] [mode]
+ fg [job_spec]                           unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMAND>  unset [-f] [-v] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMAN>  until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } or name >  variables - Names and meanings of so>
+ getopts optstring name [arg]            wait [id]
+ hash [-lr] [-p pathname] [-dt] [name >  while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]               { COMMANDS ; }
+pi@raspberrypi ~ $ systeminfo
+bash: systeminfo: command not found
+pi@raspberrypi ~ $ #help 
+pi@raspberrypi ~ $ help 
+GNU bash, version 4.2.37(1)-release (arm-unknown-linux-gnueabihf)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                                          history [-c] [-d offset] [n] or history -anrw [fil>
+ (( expression ))                                      if COMMANDS; then COMMANDS; [ elif COMMANDS; then >
+ . filename [arguments]                                jobs [-lnprs] [jobspec ...] or jobs -x command [ar>
+ :                                                     kill [-s sigspec | -n signum | -sigspec] pid | job>
+ [ arg... ]                                            let arg [arg ...]
+ [[ expression ]]                                      local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]                        logout [n]
+ bg [job_spec ...]                                     mapfile [-n count] [-O origin] [-s count] [-t] [-u>
+ bind [-lpvsPVS] [-m keymap] [-f filename] [-q name]>  popd [-n] [+N | -N]
+ break [n]                                             printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]                     pushd [-n] [+N | -N | dir]
+ caller [expr]                                         pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...) COMMANDS ;;].>  read [-ers] [-a array] [-d delim] [-i text] [-n nc>
+ cd [-L|[-P [-e]]] [dir]                               readarray [-n count] [-O origin] [-s count] [-t] [>
+ command [-pVv] command [arg ...]                      readonly [-aAf] [name[=value] ...] or readonly -p
+ compgen [-abcdefgjksuv] [-o option]  [-A action] [->  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DE] [-o option] [->  select NAME [in WORDS ... ;] do COMMANDS; done
+ compopt [-o|+o option] [-DE] [name ...]               set [-abefhkmnptuvxBCHP] [-o option-name] [--] [ar>
+ continue [n]                                          shift [n]
+ coproc [NAME] command [redirections]                  shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgilrtux] [-p] [name[=value] ...]        source filename [arguments]
+ dirs [-clpv] [+N] [-N]                                suspend [-f]
+ disown [-h] [-ar] [jobspec ...]                       test [expr]
+ echo [-neE] [arg ...]                                 time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ...]          times
+ eval [arg ...]                                        trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [arguments ...]] [red>  true
+ exit [n]                                              type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export -p          typeset [-aAfFgilrtux] [-p] name[=value] ...
+ false                                                 ulimit [-SHacdefilmnpqrstuvx] [limit]
+ fc [-e ename] [-lnr] [first] [last] or fc -s [pat=r>  umask [-p] [-S] [mode]
+ fg [job_spec]                                         unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMANDS; done          unset [-f] [-v] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMANDS; done         until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } or name () { COMMANDS >  variables - Names and meanings of some shell varia>
+ getopts optstring name [arg]                          wait [id]
+ hash [-lr] [-p pathname] [-dt] [name ...]             while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]                             { COMMANDS ; }
+pi@raspberrypi ~ $ cat /proc/version
+Linux version 3.18.7+ (dc4@dc4-XPS13-9333) (gcc version 4.8.3 20140303 (prerelease) (crosstool-NG linaro-1.13.1+bzr2650 - Linaro GCC 2014.03) ) #755 PREEMPT Thu Feb 12 17:14:31 GMT 2015
+pi@raspberrypi ~ $ cat /proc/cpuinfo
+processor	: 0
+model name	: ARMv6-compatible processor rev 7 (v6l)
+BogoMIPS	: 2.00
+Features	: half thumb fastmult vfp edsp java tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xb76
+CPU revision	: 7
+
+Hardware	: BCM2708
+Revision	: 0010
+Serial		: 0000000009088d46
+pi@raspberrypi ~ $ dkinfo
+bash: dkinfo: command not found
+pi@raspberrypi ~ $ dfinfo
+bash: dfinfo: command not found
+pi@raspberrypi ~ $ ipconfig
+bash: ipconfig: command not found
+pi@raspberrypi ~ $ ifconfig
+eth0      Link encap:Ethernet  HWaddr b8:27:eb:08:8d:46  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+pi@raspberrypi ~ $ cat /proc/meminfo
+MemTotal:         445740 kB
+MemFree:          303040 kB
+MemAvailable:     374680 kB
+Buffers:           30220 kB
+Cached:            60748 kB
+SwapCached:            0 kB
+Active:            87088 kB
+Inactive:          36992 kB
+Active(anon):      33252 kB
+Inactive(anon):      836 kB
+Active(file):      53836 kB
+Inactive(file):    36156 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:        102396 kB
+SwapFree:         102396 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         33124 kB
+Mapped:            32500 kB
+Shmem:               980 kB
+Slab:               8372 kB
+SReclaimable:       4256 kB
+SUnreclaim:         4116 kB
+KernelStack:        1328 kB
+PageTables:         1496 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      325264 kB
+Committed_AS:     292168 kB
+VmallocTotal:     565248 kB
+VmallocUsed:        3088 kB
+VmallocChunk:     321968 kB
+pi@raspberrypi ~ $ lsusb
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. 
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. 
+Bus 001 Device 004: ID 046d:c52b Logitech, Inc. Unifying Receiver
+pi@raspberrypi ~ $ ifinfo
+bash: ifinfo: command not found
+pi@raspberrypi ~ $ ifconfig
+eth0      Link encap:Ethernet  HWaddr b8:27:eb:08:8d:46  
+          inet addr:192.168.0.138  Bcast:192.168.0.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:29 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:29 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2846 (2.7 KiB)  TX bytes:3366 (3.2 KiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:8 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:8 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1104 (1.0 KiB)  TX bytes:1104 (1.0 KiB)
+
+pi@raspberrypi ~ $ 

@@ -1,0 +1,72 @@
+-------[ "Comment 1" ]---------------------------------------------------------
+
+    """Compare user input text file to English wordlist and return matches."""
+	
+	
+-------[ "Comment 2" ]---------------------------------------------------------
+
+    """Sort and print each unique word with its frequency to the console.
+    Return the results as a list to user in file output."""
+
+
+-------[ "Parity Class" ]------------------------------------------------------
+
+class Parity:
+	def __init__(self, num):
+		self.num = num
+	def check_parity(self):
+		if self.num % 2 == 0:
+			print("{} is odd.".format(self.num))
+		else:
+			print("{} is odd.".format(self.num))
+			
+			
+			
+-------[ "Comment 3" ]---------------------------------------------------------
+
+	"""This class returns the number of times each word appears in a text file."""
+	
+	
+	
+-------[ "Constructor" ]-------------------------------------------------------
+
+    def __init__(self, file):
+        """Construct class instance with file attribute."""
+        self.file = file	
+		
+		
+-------[ "WordProcess Instance" ]----------------------------------------------
+
+    class_init = WordProcess(user_input)
+	
+	
+		
+-------[ "Function to Method" ]------------------------------------------------
+
+        new_result = WordProcess.print_top_words(class_init, common_word)
+		
+		
+-------[ "Sort Method" ]-------------------------------------------------------
+		
+    def sort_by_value(item):
+        """Create a key to be used to sort wordlist later."""
+        return item[-1]
+		
+		
+-------[ "Relative Path" ]-----------------------------------------------------
+		
+                # Relative path to current user's desktop.
+                user_desktop = os.path.expanduser("~/Desktop")
+                print(user_desktop)
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				

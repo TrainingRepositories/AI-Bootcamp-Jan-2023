@@ -1,0 +1,73 @@
+-------[ "Start If" ]----------------------------------------------------------
+
+if user_input is False:
+    print("The file you specified does not exist.\n")
+	
+
+-------[ "Strip Common" ]------------------------------------------------------
+
+    if common_word == "y" or common_word == "n":
+        pass
+
+
+-------[ "If Output" ]---------------------------------------------------------
+
+    if user_output == "y":
+        print("Success!")
+    elif user_output == "n":
+        print("Exiting...")
+
+
+-------[ "Second While" ]------------------------------------------------------
+
+        while common_word != "y" or common_word != "n":
+
+
+
+-------[ "Third While" ]-------------------------------------------------------
+
+        while user_output != "y" and user_output != "n":
+
+
+-------[ "Strip Punctuation Loop" ]--------------------------------------------
+
+count = 0
+
+for word in read_input:
+    word = word.lower()
+    # Removes common punctuation so it's not part of the word.
+    read_input[count] = word.strip(".,?!\"\';:()")
+    count += 1
+	
+	
+-------[ "Comparison Loop" ]---------------------------------------------------
+
+for word in read_input:
+    word = word.lower()
+    if word in read_wordlist:
+        if word not in word_count:
+            word_count[word] = 1
+        else:
+            word_count[word] += 1
+    else:
+        continue
+
+	
+-------[ "Loop to Print" ]-----------------------------------------------------------
+
+choice = ""
+items = []
+results_list = []
+
+# Truncates output if user wants to suppress common words.
+for word in items[:50]:
+    if choice == "y" and word[0] not in COMMON_WORDS:
+        result = word[0] + ": " + str(word[1]) + " times"
+        results_list.append(result)
+        print(result)
+    elif choice == "n":
+        result = word[0] + ": " + str(word[1]) + " times"
+        results_list.append(result)
+        print(result)
+
+

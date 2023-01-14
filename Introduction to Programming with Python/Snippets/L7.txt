@@ -1,0 +1,55 @@
+-------[ "Except" ]------------------------------------------------------------
+
+        except FileNotFoundError:
+            print("  The input file does not exist.")
+            return False
+					
+
+
+-------[ "Custom Exception" ]--------------------------------------------------
+
+"""This module includes custom exception classes for the wordcount program."""
+
+
+class FileEmptyError(Exception):
+    """
+    This class creates an exception for use when a wordcount
+    input file is empty.
+    """
+    pass
+
+
+class FileTooBigError(Exception):
+    """
+    This class creates an exception for use when a wordcount
+    input file exceeds a specified file size.
+    """
+
+    def __init__(self, size):
+        """Construct class instance with file size attribute."""
+        self.size = size
+
+    def __float__(self):
+        """Format file size as type float."""
+        return self.size
+
+
+
+-------[ "Raise" ]-------------------------------------------------------------
+
+            if file_size > 1e7:
+                raise FileTooBigError(os.path.getsize(input_file_name) / 1e6)
+            if file_size == 0:
+                raise FileEmptyError()
+				
+				
+-------[ "Except" ]-------------------------------------------------------------
+
+        except FileEmptyError:
+            print("  The input file is empty. There is nothing to analyze.")
+            return False
+
+        except FileTooBigError as arg:
+            print("  The input is {:.1f} megabytes. "
+                  "The maximum file size is 10 megabytes.".format(float(arg)))
+            return False

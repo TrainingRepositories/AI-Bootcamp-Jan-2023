@@ -1,0 +1,69 @@
+
+
+-------[ "Write Log File" ]-----------------------------------------------------
+
+        # Get new file names for log files based on the original manuscript file name.
+        file_name = self.manuscript_file.split("/")[-1]
+        no_ext = file_name.rsplit(".", 1)[0]
+        log_filename = os.path.join(output_folder, no_ext + "_results.txt")
+
+        # Save the results to a log file.
+        write_file = open(log_filename, "w")
+        write_file.write("Results for {}:\n\n".format(file_name))
+        for line in self.results_list:
+            write_file.write(line + "\n")
+        write_file.close()
+
+
+
+-------[ "Read Manuscript" ]---------------------------------------------------
+
+        file_size = os.path.getsize(input_file_name)
+        print("  Manuscript size is {} bytes.".format(file_size))
+        open_input_file = open(input_file_name, "r")
+        print("  Reading file, one moment...")
+        self.words_in_manuscript = open_input_file.read().split()
+        open_input_file.close()
+        print("  File read successfully.")
+
+
+
+-------[ "Read Word List" ]----------------------------------------------------
+        open_wordlist_file = open(wordlist_path, "r")
+        self.wordlist = open_wordlist_file.read().split()
+        open_wordlist_file.close()
+
+
+-------[ "Enumerate Files" ]--------------------------------------------------------
+
+        print("\nThe {} output folder now contains:".format(output_folder))
+        i = 0
+        for item in os.listdir(output_folder):
+            print("  " + os.listdir(output_folder)[i])
+            i += 1
+
+		
+-------[ "Working Directory" ]-------------------------------------------------
+
+        # Set output folder to be current working directory.
+        if os.path.isdir(output_folder) is False:
+            os.mkdir(output_folder)
+        os.chdir(output_folder)
+		
+-------[ "Time Stamp" ]--------------------------------------------------------
+
+        timestamp = strftime("%Y-%m-%d_%H.%M.%S")
+        log_archive_filename = no_ext + "_results_backup_" + timestamp + ".txt"
+		
+-------[ "Copy File" ]---------------------------------------------------------
+
+        print("  Log file saved to " + log_filename)
+
+        # Copy archive file.
+        copyfile(log_filename, log_archive_filename)
+        print("  Archive file saved to " + log_archive_filename)
+
+
+
+
+

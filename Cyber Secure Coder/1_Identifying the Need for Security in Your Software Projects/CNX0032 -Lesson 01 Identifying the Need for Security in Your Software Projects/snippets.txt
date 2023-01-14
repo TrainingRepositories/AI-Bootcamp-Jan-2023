@@ -1,0 +1,16 @@
+SNIPPET 1
+---------
+
+    passTests = ["Short7!",
+                 "nouppercase7!",
+                 "NOLOWERCASE7!",
+                 "NoNumber!",
+                 "NoSpecial7",
+                 "GoodPass7!"]
+
+    for eachTest in passTests:
+        if ValidateStrongPassword(eachTest):
+            print(eachTest, "PASS")
+        else:
+            print(eachTest, "FAIL")
+

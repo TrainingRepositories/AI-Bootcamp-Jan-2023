@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='{{ url_for("static", filename="main.css") }}'>
+</head>
+    
+<body>
+  <div class='logo_area'><img src='static/logo.png' alt='Greene City National Bank' class='gcnb_logo'></div>
+  <div class='controlgrid'>
+    <div class='header'>
+      <h1>GCNB Project Results</h1>
+    </div>
+    <div class='controls'>
+      <a href='/?model=clf' class='{{ img_clf }}'>Term Deposit Prediction<img src='static/clf.svg' class='icon'/></a>
+      <a href='/?model=reg' class='{{ img_reg }}'>Total Balance Prediction<img src='static/reg.svg' class='icon'/></a>
+      <a href='/?model=clust' class='{{ img_clust }}'>Customer Segmentation<img src='static/clust.svg' class='icon'/></a>
+    </div>
+    <div class='desc'>
+      <table>
+        <tr><td><b>Model type:</b></td><td>{{ model_type }}</td></tr>
+        <tr><td><b>Description:</b></td><td>{{ model_desc }}</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class='results_area'>
+    <div class='welcome'>
+      <h2>Welcome!</h2>
+      <p>This is a proof of concept (POC) for a web app that demonstrates the results of machine learning models created during the GCNB data science project.</p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+
+</body>
+</html>

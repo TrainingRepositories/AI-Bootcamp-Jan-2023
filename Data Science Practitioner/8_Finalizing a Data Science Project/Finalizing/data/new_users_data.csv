@@ -1,0 +1,5 @@
+number_transactions,total_amount_usd,job_management,job_technician,job_entrepreneur,job_blue-collar,job_retired,job_admin.,job_services,job_self-employed,job_unemployed,job_housemaid,job_student,education_tertiary,education_secondary,education_Unknown,education_primary,default,housing,loan,contact_cellular,contact_telephone,duration,campaign,pdays,previous,device_desktop,device_tablet,single,age_group_encoded,month_joined
+4,237.1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,FALSE,FALSE,FALSE,1,0,76,1,-1,0,0,1,0,4,11
+2,-43.12,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,TRUE,TRUE,FALSE,1,0,145,2,-1,0,0,1,1,2,3
+1,789.45,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,FALSE,TRUE,TRUE,1,0,172,3,-1,0,1,0,0,1,4
+4,3291.41,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,FALSE,FALSE,FALSE,1,0,35,1,-1,0,0,1,1,3,6

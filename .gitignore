@@ -3,6 +3,7 @@
 /.env3.7_base
 /.env3.8.5
 /.env3.8.5_win
+.env_3.9.7_win
 /.env3.9
 /.env3.10
 .DS_Store
@@ -11,4 +12,4 @@
 create_env_details.txt
 *.ipynb
 
-Slides_and_labs/*
+

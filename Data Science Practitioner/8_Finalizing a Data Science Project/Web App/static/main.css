@@ -1,0 +1,176 @@
+body {
+  background: #cccccc;
+}
+
+/* Bank logo image */
+.gcnb_logo {
+    max-height: 250px;
+    height: auto;
+}
+
+/* Bank logo area */
+.logo_area {
+  text-align: center;
+  background: #3e965f;
+  border-radius: 30px;
+}
+
+/* Format for any first-level headings */
+h1 {
+  text-align: center;
+  font-family: Sans-Serif;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+}
+
+/* Format for any second-level headings */
+h2 {
+  text-align: center;
+  font-family: Sans-Serif;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-top: 7px;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-bottom: 7px;
+  color: #000000;
+}
+
+/* The area where charts are displayed */
+.results_area {
+  text-align: center;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 30px;
+}
+
+/* Format of any table in the area where charts are displayed */
+.results_area table {
+  margin: auto;
+  border-collapse: collapse;
+  border: none;
+}
+
+/* Format of any table headers in the area where charts are displayed */
+.results_area th {
+  border: none;
+  padding: 3px;
+  text-align: left;
+}
+
+/* Format of any table cells in the area where charts are displayed */
+.results_area td {
+  border: none;
+  padding: 3px;
+  padding-left: 32px;
+}
+
+/* Format of any images in the area where charts are displayed */
+.results_area img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Area containing one chart */
+.results_area .chart {
+  border-radius: 30px;
+  padding: 12px;
+  margin-top: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: #ffffff;
+}
+
+/* Area containing model scores */
+.results_area .scores {
+  border-radius: 30px;
+  padding: 12px;
+  margin-top: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: #ffffff;
+}
+
+/* Area containing welcome message */
+.results_area .welcome {
+  border-radius: 30px;
+  padding: 12px;
+  margin-top: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: #ffffff;
+}
+
+/* The area that contains the navigation controls */
+.controlgrid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  border-radius: 30px;
+  padding: 12px;
+  margin-top: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: #eeeeee;
+}
+
+/* Title area above the control buttons */
+.controlgrid .header {
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+
+/* General appearance of menu buttons */
+.controls a {
+  color: #000000;
+  font-family: Sans-Serif;
+  font-weight: bold;
+  display: block;
+  margin: 10px;
+  padding: 6px;
+  text-align: center;
+  border-radius: 24px;
+  text-decoration: none;
+  background: linear-gradient(#dfdfdf, #ffffff);
+  border: 1px solid #000000;
+}
+
+/* Appearance of menu buttons when selected */
+a.reg_selected, a.clf_selected, a.clust_selected {
+  color: #ffffff;
+  background: #3e965f;
+}
+
+/* Appearance of task icon in button */
+.icon {
+    vertical-align: middle;
+    max-height: 35px;
+    padding-left: 10px;
+}
+
+/* Area in which description is shown */
+.desc {
+  background: #ffffff;
+  text-align: left;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 20px;
+}
+
+/* Format of table used to show description */
+.desc table {
+  display: inline;
+}
+
+/* Format of cells in the table used to show description */
+.desc td {
+  vertical-align: top;
+  padding: 9px;
+}

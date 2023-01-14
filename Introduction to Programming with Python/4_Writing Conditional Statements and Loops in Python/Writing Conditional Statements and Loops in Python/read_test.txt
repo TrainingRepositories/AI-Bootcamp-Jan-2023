@@ -1,0 +1,3 @@
+read_input = ["This", "is", "a", "test!", "this", "is,", "another", "test.",
+              "TesT", "value", "this", "!test", "is?"]
+read_wordlist = ["this", "is", "a", "test"]

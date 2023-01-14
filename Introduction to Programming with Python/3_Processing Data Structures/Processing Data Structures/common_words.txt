@@ -1,0 +1,5 @@
+COMMON_WORDS = {"the", "be", "are", "is", "were", "was", "am",
+                "been", "being", "to", "of", "and", "a", "in",
+                "that", "have", "had", "has", "having", "for",
+                "not", "on", "with", "as", "do", "does", "did",
+                "doing", "done", "at", "but", "by", "from"}

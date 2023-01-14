@@ -1,0 +1,19 @@
+{
+  "ignore": [
+    "**/app/private/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**"
+  ],
+  "dependencies": {
+    "mute": [
+      "sequelize",
+      "sequelize-restful",
+      "sanitize-html"
+    ],
+    "unused-ignores": [
+      "sqlite3",
+      "grunt-cli"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+engines:
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  fixme:
+    enabled: true
+
+ratings:
+   paths:
+   - "**.js"
+   - "**.css"
+
+exclude_paths:
+- "app/private/**/*"
+- "app/css/geo-bootstrap/**/*"
+- "data/datacreator.js"
