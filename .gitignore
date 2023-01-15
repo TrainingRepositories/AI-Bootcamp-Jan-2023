@@ -11,5 +11,4 @@
 .env/pyvenv.cfg
 create_env_details.txt
 *.ipynb
-
-
+*.pyc
